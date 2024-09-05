@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Winluxe</title>
+    <meta name="title" content="Winluxe">
+    <meta name="url" content="http">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+  <body class="body">
+    <div class="overlay active" id="overlay"></div>
+    <img class="bg" src="./img/bg.png">
+    <div class="datetime" id="datetime">
+      <div class="clock"><span class="clock-main" id="clockMain"></span><span class="clock-hh" id="clockHh"></span></div>
+      <div class="date" id="date"></div>
+    </div>
+    <main class="main" id="main">
+      <div class="login">
+        <!--<img class="avi" src="./img/avi.png" />-->
+        <video class="avi" autoplay muted loop>
+          <source src="./img/syl.webm" type="video/webm">
+        </video>
+        <h1 class="uname" id="uname"></h1>
+        <form class="form" id="form" action="POST">
+          <div class="pass-outer">
+            <input class="pass-inner" id="pass" type="password" tabindex="1" placeholder="Password">
+            <button class="pass-eye" id="pass-eye" type="button">
+              <svg id="pass-eye-enable" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-296q85 0 144.5-59.5T684-500q0-85-59.5-144.5T480-704q-85 0-144.5 59.5T276-500q0 85 59.5 144.5T480-296Zm-.12-94Q434-390 402-422.12q-32-32.12-32-78T402.12-578q32.12-32 78-32T558-577.88q32 32.12 32 78T557.88-422q-32.12 32-78 32Zm.12 220q-160 0-290-90T4-500q56-150 186-240t290-90q160 0 290 90t186 240q-56 150-186 240t-290 90Z"/></svg>
+              <svg id="pass-eye-disable" class="inactive" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M800-12 620-190q-35 11-69.5 15.5T480-170q-165 0-293.5-92T4-500q20-54 49.5-100t70.5-85L12-800l74-74L874-86l-74 74ZM480-296q9 0 17-.5t16-2.5L279-533q-2 9-2.5 16.5T276-500q0 86 59 145t145 59Zm315 17L664-410q10-21 15-43.5t5-46.5q0-86-59-145t-145-59q-24 0-49.5 6T390-684L283-791q44-19 93.5-29T480-830q165 0 292.5 92T956-500q-24 66-65.5 122.5T795-279ZM589-485 465-609q29-4 53 5t41 27q17 17 25.5 41.5T589-485Z"/></svg>
+            </button>
+            <input class="submit" id="submit" type="submit" value="→" tabindex="2">
+          </div>
+        </form>
+        <p class="message" id="message">Test message</p>
+      </div>
+      <div class="buttons">
+        <div class="button-internet">
+          <svg>
+            <path fill="#fff" d="M33.928,6.874V5.013H2.074l0,0v1.586H2.072v8.617h0.002v1.685h3.91v14.053h1.863v-6.066h11.176v4.236h-7.442v1.863h16.747 v-1.863h-7.442v-4.236h11.178h1.861h0.002v-1.861h-0.002V6.874H33.928z M3.935,6.874h6.039v2.135H3.935V6.874z M3.935,15.04v-4.17 h2.018v2.06h1.861v-2.06h2.16v4.17H3.935z M32.065,23.027H7.847v-6.125h3.992V15.04h-0.004V6.874h20.229V23.027z"/>
+          </svg>
+        </div>
+        <div class="button-accessibility">
+          <svg>
+            <path d="m10.932 15.14h5.619l-2.8411 2.8411z" fill-rule="evenodd" stroke="#fff" stroke-width="1.4" fill="#fff"/>
+            <path d="m26.343 18.32v-5.619l2.841 2.8411z" fill-rule="evenodd" stroke="#fff" stroke-width="1.4" fill="#fff"/>
+            <path d="m13.142 14.574v-10.638h1.4205v10.796z" fill-rule="evenodd" stroke="#fff" stroke-width="1.4" fill="#fff"/>
+            <path d="m25.877 14.726h-5.5804l-1.3616 1.6071h6.8973z" fill-rule="evenodd" stroke="#fff" stroke-width="1.4" fill="#fff"/>
+            <path d="m10.966 5.9801c-2.321 0.3336-4.5385 1.3362-6.3356 2.8409" fill-rule="evenodd" stroke="#fff" stroke-width="2.184" fill="#fff"/>
+            <path d="m3.497 10.016c-1.5328 1.7751-2.5481 3.9867-2.9166 6.3015" fill-rule="evenodd" stroke="#fff" stroke-width="2.184" fill="#fff"/>
+            <path d="m0.62507 18.028c0.19173 2.3374 1.0576 4.6117 2.4503 6.497" fill-rule="evenodd" stroke="#fff" stroke-width="2.184" fill="#fff"/>
+            <path d="m4.7205 26.073c1.9002 1.3746 4.191 2.196 6.5288 2.3642" fill-rule="evenodd" stroke="#fff" stroke-width="2.184" fill="#fff"/>
+            <path d="m12.873 28.706c2.3277-0.28641 4.565-1.2439 6.3922-2.7119" fill-rule="evenodd" stroke="#fff" stroke-width="2.184" fill="#fff"/>
+            <path d="m20.732 24.654c1.3828-1.8943 2.214-4.1815 2.3924-6.5186" fill-rule="evenodd" stroke="#fff" stroke-width="2.184" fill="#fff"/>
+          </svg>
+        </div>
+        <div class="button-power" tabindex="4">
+          <svg>
+            <path d="m 24.003664,8.7453102 0,15.0771908 m -3.776182,-8.687006 c -6.129933,1.963263 -9.536256,9.713136 -6.837732,15.556801 2.483407,6.054402 10.627619,8.836883 16.310815,5.610424 5.383542,-2.944896 7.481895,-10.590578 4.286282,-15.845929 -1.31907,-2.447783 -3.497769,-4.498425 -6.170129,-5.365982" style="fill:none;fill-rule:evenodd;stroke:#ffffff;stroke-width:2px;stroke-linecap:butt;stroke-linejoin:round;stroke-opacity:1" />
+          </svg>
+          <ul class="button-power-menu">
+            <li class="button-power-menu-item" id="shutdown">Shut down</li>
+            <li class="button-power-menu-item" id="restart">Restart</li>
+            <li class="button-power-menu-item" id="hibernate">Sleep</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>
